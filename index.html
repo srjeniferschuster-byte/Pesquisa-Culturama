@@ -14,16 +14,16 @@
         <form action="" method="get">
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for="userName">Nome </label>
-                <input type="text" name="userName" required>
+                <label for="name">Nome </label>
+                <input id="name" type="text" name="userName" required>
                 <br>
 
                 <label for="age">Idade</label>
-                <input type="number" name="age" min="12" max="100" required>
+                <input id="age" name="age" min="12" max="100" required>
                 <br>
 
                 <label for="birthDate">Data de nascimento</label>
-                <input type="date" name="birthDate">
+                <input id="birthdate" type="date" name="birthDate">
                 <br>
 
                 <label for="userEmail">Email</label>
@@ -38,10 +38,127 @@
                 <input type="file" accept="image/*" name="userImage">
                 <br>
                 
+            </fieldset>
 
+            <fieldset>
+                <legend>Perfil</legend>
 
+                <p>Genero:</p>
+
+                <input type="radio" name="userGender" value="Feminino">
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" value="Maculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" value="Não informar">
+                <label for="userGender">Não informar</label>
+                <br>
+
+                <label for="maritalStatus">Estado civil:</label>
+                <select name="maritalStatus" >
+                    <option value="notInformed">Selecione</option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Viuvo">Viuvo</option>
+                    <option value="Divorciado">Divorciado</option>
+                </select>
+                <br>
+
+                <label for="userState">Estado</label>
+                <select name="userCity">
+                    <option value="notInformed">Selecione</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espirito Santo">Espirito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                </select>
+                <br>
+
+                <label for="userCity">Cidade</label>
+                <input type="userCity" name="Cidade">
+                    
 
             </fieldset>
+
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais:</p>
+                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <label for="instagram">Instagram</label>
+                <br>
+                <input id="facebook" type="checkbox" name="social" value="facebook">
+                <label for="facebook">Facebook</label>
+                <br>
+                <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                <label for="linkedin">Linkedin</label>
+                <br>
+                <input id="x" type="checkbox" name="social" value="x">
+                <label for="x">X</label>
+                <br>
+
+                <label for="musicStyle">Estilo musical</label>
+                <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text"> 
+                <datalist id="styleTypes">
+                    <option value="Rock">
+                    <option value="Pop">
+                    <option value="Samba">
+                    <option value="Sertanejo">
+                </datalist>   
+                <br>
+                
+                <label for="favoriteColor">Cor favorita</label>
+                <input type="color" name="userFavoriteColor" id="favoriteColor">
+            </fieldset>
+
+            <fieldset>
+                <legend>Opnião</legend>
+                <p>Satisfação</p>
+
+                <input type="radio" name="yourSatisfaction" value="Otimo">
+                <label for="yourSatisfaction">Otimo</label>
+
+                <input type="radio" name="yourSatisfaction" value="Boa">
+                <label for="yourSatisfaction">Boa</label>
+
+                <input type="radio" name="yourSatisfaction" value="regular">
+                <label for="yourSatisfaction">Regular</label>
+
+                <input type="radio" name="yourSatisfaction" value="pessimo">
+                <label for="yourSatisfaction">Péssimo</label>
+                <br>
+                
+
+
+                <label for="commet">Escreva sua opnião</label>
+                <textarea name="userCommet" id="commet" placeholder="Digite aqui sua opnião"></textarea>
+               
+
+            </fieldset>
+
             
 
 
