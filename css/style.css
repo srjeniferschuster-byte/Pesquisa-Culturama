@@ -15,6 +15,7 @@ img{
 
 h1 {
     font-family: "Fjalla One", sans-serif;
+    text-align: center;
 
 }
 
@@ -33,6 +34,7 @@ form{
     background-color: #ffffff;
     padding: 15px;
     border-radius: 16px;
+    margin-bottom: 100px;
 
 }
 
@@ -48,4 +50,75 @@ legend{
     font-size: 18px;
     padding: 0 5px;
 }
+
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+input[type="tel"],
+input[type="file"]
+{
+    margin-bottom: 0;
+
+}
+small{
+    margin-bottom:20px ;
+}
+
+p{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input, select textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+textarea{
+    min-height: 150px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+}
+
+input[type="color"]{
+    width: 40px;
+    padding: 0 5px;
+}
+
+input:invalid, select:invalid, textarea:invalid{
+    border-color: red;
+
+}
+
+input:valid, select:valid, textarea:valid{
+    border-color: green;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: dimgrey;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: white;
+}
+
+button[type="reset"]:hover{
+    background-color:red;
+    color: white;
+}
+
 

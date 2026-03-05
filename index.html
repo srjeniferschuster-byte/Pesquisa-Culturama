@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="culturama-favico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="culturama-favico.png" type="image/x-icon">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +18,11 @@
     <main>
          <header>
         <img src="img/logo-culturama.png" alt="Logo Culturama">
-        <h1>Pesquisa Online</h1>
+        <h1>Pesquisa de Opnião</h1>
 
          </header>
     <section>
-        <form action="" method="get">
+        <form action="sucesso.html" method="get">
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for="name">Nome </label>
@@ -40,11 +42,13 @@
                 <br>
 
                 <label for="userNumberPhone">Numero de telefone</label>
-                <input type="tel" name="userNumberPhone" pattern="[0-9{11}]"  placeholder="(DD)111111111">
+                <input type="tel" name="userNumberPhone" pattern="[0-9{11}]"  placeholder="(DD)111111111" aria-describedby="phoneHelp">
+                <small id="phoneHelp">Preencha com 11 digítos no formato: DD+ número sem espaços ou hífen.</small>
                 <br>
 
                 <label for="file" accept="image/*">Upload de foto</label>
-                <input type="file" accept="image/*" name="userImage">
+                <input type="file" accept="image/*" name="userImage" aria-describedby="imageHelp">
+                <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
                 <br>
                 
             </fieldset>
@@ -162,7 +166,7 @@
                 
 
 
-                <label for="commet">Escreva sua opnião</label>
+                <label for="commet">Escreva sua opnião</label><br>
                 <textarea name="userCommet" id="commet" placeholder="Digite aqui sua opnião"></textarea>
                
 
@@ -182,8 +186,8 @@
 
 
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="submit" aria-label="Enviar dados do formulário">Enviar</button>
+            <button type="reset" aria-label="Limpar dados do formulário">Limpar</button>
 
 
 
