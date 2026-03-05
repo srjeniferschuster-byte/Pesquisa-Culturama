@@ -42,7 +42,8 @@
                 <br>
 
                 <label for="userNumberPhone">Numero de telefone</label>
-                <input type="tel" name="userNumberPhone" pattern="[0-9{11}]"  placeholder="(DD)111111111">
+                <input type="tel" name="userNumberPhone" pattern="[0-9{11}]"  placeholder="(DD)111111111" aria-describedby="phoneHelp">
+                <small id="phoneHelp">Preencha com 11 digítos no formato: DD+ número sem espaços ou hífen.</small>
                 <br>
 
                 <label for="file" accept="image/*">Upload de foto</label>
